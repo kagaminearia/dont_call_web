@@ -1,0 +1,48 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: url(./bg.png);
+    background-size: cover;
+
+
+}
+
+#board {
+    width: 480px;
+    height: 480px;
+    background-color: white;
+    /* background: url() */
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    border-radius: 25px;
+
+}
+
+/* board = 480x480px */
+#board div{
+    width: 160px;
+    height: 160px;
+    background: url(./idle.jpg) ;
+    background-size: cover;
+}
+
+#board div img{
+    /* all img tags inside the tile div tags */
+    width: 160px;
+    height: 160px;
+
+    /* prevent the images from being dragged and highlighted */
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#level {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
